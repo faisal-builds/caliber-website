@@ -19,9 +19,11 @@ export default function CTA() {
               becomes possible, and provide a fixed quote. No pressure, no obligation.
             </p>
             <div className="relative mt-10 flex justify-center">
-              <Button
-                href={`mailto:${site.email}?subject=Private%20Consultation`}
+             <Button
+                href={site.calendly}
                 variant="primary"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Book a private consultation
               </Button>
