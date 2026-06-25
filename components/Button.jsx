@@ -4,6 +4,7 @@ export default function Button({
   href = "#",
   variant = "primary",
   className = "",
+  ...rest
 }) {
   const base =
     "inline-flex items-center justify-center gap-2 rounded-full text-sm font-medium tracking-tight transition-all duration-300 px-6 py-3";
@@ -18,7 +19,7 @@ export default function Button({
   };
 
   return (
-    <a href={href} className={`${base} ${variants[variant]} ${className}`}>
+    <a href={href} className={`${base} ${variants[variant]} ${className}`} {...rest}>
       {children}
     </a>
   );
